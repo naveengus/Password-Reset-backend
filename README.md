@@ -28,9 +28,9 @@ This is the backend for the password reset application, built with Node.js, Expr
 ## API Endpoints
 
 1. **Signup**
-   POST /users/signup
-   Allows users to create a new account.
-   Request Body:
+   - POST /users/signup
+   - Allows users to create a new account.
+   -  Request Body:
    ```
    {
    "firstName": "John",
@@ -40,12 +40,11 @@ This is the backend for the password reset application, built with Node.js, Expr
    }
    ```
 
-```
-
 2. **Login**
-   POST /users/login
-   Allows users to log in using their email and password.
-   Request Body:
+   - POST /users/login
+   - Allows users to log in using their email and password.
+   - Request Body:
+   
 ```
 
 {
@@ -56,9 +55,10 @@ This is the backend for the password reset application, built with Node.js, Expr
 ```
 
 3. **Forgot Password**
-   POST /users/forgotPassword
-   Sends a password reset OTP to the user's email.
-   Request Body:
+   - POST /users/forgotPassword
+   - Sends a password reset OTP to the user's email.
+   - Request Body:
+   
 ```
 
 {
@@ -68,9 +68,10 @@ This is the backend for the password reset application, built with Node.js, Expr
 ```
 
 4. **Reset Password**
-POST /users/resetPassword
-Allows users to reset their password using the OTP.
-Request Body:
+- POST /users/resetPassword
+- Allows users to reset their password using the OTP.
+- Request Body:
+
 ```
 
 {
@@ -80,4 +81,3 @@ Request Body:
 
 ```
 
-```
